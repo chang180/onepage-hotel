@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>泰山渡假飯店 為了夢想而努力</title>
+    <!-- 標題列圖示 -->
+    <link rel="shortcut icon" href="imgs/favicon1.ico" type="img/x-icon">
     <!-- Bootstrap CSS: -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -66,6 +68,30 @@
         #roomPrice th {
             width: 25%;
         }
+
+        /* 服務設施 */
+        @media (min-width: 992px) {
+            #hotel-facility li.col-lg-6:nth-of-type(even) img {
+                order: 1;
+            }
+        }
+
+        #hotel-facility {
+            background: url("https://picsum.photos/1080/1080/?random=1"),
+                radial-gradient(circle, #777 30%, #ccc 70%),
+                linear-gradient(to right, #999, #444);
+            background-blend-mode: multiply, screen;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+
+            text-shadow: #333 .3rem .3rem .5rem;
+        }
+
+        #hotel-transportation iframe {
+            filter: grayscale(.75) brightness(.5);
+            /* opacity:.7; */
+        }
     </style>
 </head>
 
@@ -78,7 +104,7 @@
             >&times;</span></button>
 
     </div> -->
-    <section id="hotel-slider" class="carousel slide" data-ride="carousel">
+    <section id="hotel-slider" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover">
         <ol class="carousel-indicators">
             <li data-target="#hotel-slider" data-slide-to="0" class="active"></li>
             <li data-target="#hotel-slider" data-slide-to="1"></li>
@@ -415,22 +441,292 @@
             </div>
         </article>
     </section>
+    <section id="hotel-facility" class="py-5 text-white">
+        <header class="container text-center">
+            <h2 class="pb-3">服務設施</h2>
+        </header>
+        <article class="container py-5 px-0 overflow-hidden">
+            <ul class="row list-unstyled">
+                <li class="col-lg-6 flex-sm-row align-items-center flex-column media mb-4">
+                    <img src="https://picsum.photos/200/200/?random=1" class="pb-3 col-lg-6">
+                    <div class="col-sm-6 media-body">
+                        <h5 class="mt-0 mb-1">1st List-based media object</h5>
+                        <p class="pb-3 border-bottom border-info">Cras sit amet nibh libero, in gravida nulla. Nulla vel
+                            metus scelerisque ante sollicitudin. Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                    </div>
+                </li>
+                <li class="col-lg-6 flex-sm-row align-items-center flex-column media mb-4">
+                    <img src="https://picsum.photos/200/200/?random=2" class="pb-3 col-lg-6">
+                    <div class="col-sm-6 media-body">
+                        <h5 class="mt-0 mb-1">2nd List-based media object</h5>
+                        <p class="pb-3 border-bottom border-info">Cras sit amet nibh libero, in gravida nulla. Nulla vel
+                            metus scelerisque ante sollicitudin. Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                    </div>
+                </li>
+                <li class="col-lg-6 flex-sm-row align-items-center flex-column media mb-4">
+                    <img src="https://picsum.photos/200/200/?random=3" class="pb-3 col-lg-6">
+                    <div class="col-sm-6 media-body">
+                        <h5 class="mt-0 mb-1">3rd List-based media object</h5>
+                        <p class="pb-3 border-bottom border-info">Cras sit amet nibh libero, in gravida nulla. Nulla vel
+                            metus scelerisque ante sollicitudin. Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                    </div>
+                </li>
+                <li class="col-lg-6 flex-sm-row align-items-center flex-column media mb-4">
+                    <img src="https://picsum.photos/200/200/?random=4" class="pb-3 col-lg-6">
+                    <div class="col-sm-6 media-body">
+                        <h5 class="mt-0 mb-1">4th List-based media object</h5>
+                        <p class="pb-3 border-bottom border-info">Cras sit amet nibh libero, in gravida nulla. Nulla vel
+                            metus scelerisque ante sollicitudin. Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                    </div>
+                </li>
+                <li class="col-lg-6 flex-sm-row align-items-center flex-column media mb-4">
+                    <img src="https://picsum.photos/200/200/?random=5" class="pb-3 col-lg-6">
+                    <div class="col-sm-6 media-body">
+                        <h5 class="mt-0 mb-1">5th List-based media object</h5>
+                        <p class="pb-3 border-bottom border-info">Cras sit amet nibh libero, in gravida nulla. Nulla vel
+                            metus scelerisque ante sollicitudin. Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                    </div>
+                </li>
+                <li class="col-lg-6 flex-sm-row align-items-center flex-column media mb-4">
+                    <img src="https://picsum.photos/200/200/?random=6" class="pb-3 col-lg-6">
+                    <div class="col-sm-6 media-body">
+                        <h5 class="mt-0 mb-1">6th List-based media object</h5>
+                        <p class="pb-3 border-bottom border-info">Cras sit amet nibh libero, in gravida nulla. Nulla vel
+                            metus scelerisque ante sollicitudin. Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                    </div>
+                </li>
+            </ul>
+        </article>
+    </section>
+    <section id="hotel-food" class="py-5 container">
+        <header class="text-center">
+            <h2 class="text-info pb-3">餐飲美食</h2>
+        </header>
+        <article class="py-5 row">
 
+            <!-- tab content -->
+            <div class="tab-content mb-3 col-12 col-lg-6">
+                <img id="foodimg1" class="w-100 img-fluid img-thumbnail tab-pane fade show active"
+                    src="https://picsum.photos/600/400/?random=1">
+                <img id="foodimg2" class="w-100 img-fluid img-thumbnail tab-pane fade"
+                    src="https://picsum.photos/600/400/?random=2">
+                <img id="foodimg3" class="w-100 img-fluid img-thumbnail tab-pane fade"
+                    src="https://picsum.photos/600/400/?random=3">
+            </div>
+
+            <!-- accordion -->
+            <div class="col-12 col-lg-6 px-3 accordion list-group" id="foodmenu">
+                <div class="card" data-toggle="list" data-target="#foodimg1">
+                    <a class="card-header text-decoration-none alert-info" data-toggle="collapse" href="#foodmsg1">
+                        歐式頂級豪華早餐（自助式）
+                        <small class="text-muted float-right">in 2F 食堂</small>
+                    </a>
+                    <div id="foodmsg1" class="collapse show" data-parent="#foodmenu">
+                        <div class="card-body">
+                            <p>
+                                致春園餐廳眺望溫泉公園景觀，嚴選谷關當地食材精心烹調充滿谷關風味的特色小吃，菜色美味有口皆碑，在這裡除了品嘗美食外更可飽覽溫泉公園山光水色，味覺與視覺的雙重享受。<br>
+                                適合工商宴席、婚禮宴客、家庭聚餐、大宴小酌、台菜、客家菜、風味套餐色、香、味美。寬敞的宴會大廳飯店備有多種餐飲選擇，是用餐之好所在！，多種餐飲選擇滿足您挑剔的味蕾並歡迎親臨品嚐！!
+                            </p>
+                            <p class="float-right text-danger">
+                                定價： 大人 NT500 / 小孩 NT300<br>
+                                營業時間：AM 06:00 ~ AM 11:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-toggle="list" data-target="#foodimg2">
+                    <a class="card-header text-decoration-none alert-info collapsed" data-toggle="collapse"
+                        href="#foodmsg2">
+                        咖啡複合式鋼琴酒吧
+                        <small class="text-muted float-right">in 1F 中庭</small>
+                    </a>
+                    <div id="foodmsg2" class="collapse" data-parent="#foodmenu">
+                        <div class="card-body">
+                            <p>
+                                大飯店一樓的挑高中庭，瀰漫優雅的南洋休閒風，庭內雨林造景，融合水聲與天籟柔美樂音，供應各式花茶、咖啡、健康蔬果汁、英式下午茶及宵夜，揉合自然音樂，是您輕鬆暢敘的最佳地點。<br>
+                                （假日二人樂團鋼琴、長笛、薩克斯風演奏）
+                            </p>
+                            <p class="float-right text-danger">
+                                基本消費：NT150 + 10% / 位<br>
+                                營業時間：19:00 ~ 25:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-toggle="list" data-target="#foodimg3">
+                    <a class="card-header text-decoration-none alert-info collapsed" data-toggle="collapse"
+                        href="#foodmsg3">
+                        桶仔爐烤春雞 露營客最愛
+                        <small class="text-muted float-right">代訂預約</small>
+                    </a>
+                    <div id="foodmsg3" class="collapse" data-parent="#foodmenu">
+                        <div class="card-body">
+                            <p>
+                                精選體型小、骨骼細的 40 天春雞，將其均勻裹上一層厚厚的楓糖芥末後，再送進烤爐燒烤。<br>
+                                爐烤春雞因恰到好處的溫度而能保有鮮嫩口感與湯汁；取出整隻雞後，你可用手輕易撥開骨架幼嫩的春雞，一口咬下細膩的肉質，感受混合著楓糖芥末醬汁的酥脆表皮，享受這多層次卻不膩口的美味，亦是本季每日午時限量的私房美饌。
+                            </p>
+                            <p class="float-right text-danger">
+                                露營客代訂服務 $800/隻<br>
+                                （以利備食材，請於一週前預約）
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="hotel-transportation" class="embed-responsive py-5">
+        <iframe class="embed-responsive-item"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7080213475365!2d121.41715431500656!3d25.043980983967728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1590224686016!5m2!1szh-TW!2stw"
+            allowfullscreen></iframe>
+        <article class="container flex-column">
+            <header class="col-12 col-lg-6 mb-3 p-0 text-center">
+                <h2 class="card text-info">交通資訊</h2>
+            </header>
+            <!-- <div class="col-12"></div> -->
+            <div class="card col-12 col-lg-6">
+                <div class="card-body">
+                    <strong>公車、捷運</strong>
+                    <ul class="pl-4">
+                        <li>公車：三重客運 (637、638)、指南客運 (797、798、801、858、880、883、1501、1503)，至明志科技大學站下車。</li>
+                        <li>新北市泰山區免費公車（泰山區 F216 明志國小-台北車站（北三門搭車）)：至貴子路下車後，步行至貴子路口左轉明志路 3 段，明志路直行約 100
+                            公尺至工專路右轉，再直行即可至明志科技大學。</li>
+                        <li>捷運：臺北捷運中和新蘆線至丹鳳站 1 號出口或桃園捷運機場線至泰山貴和站（明志科大）1 號出口，再轉乘公車或騎乘 YouBike 微笑單車（約 10~15 分鐘）至明志科技大學。
+                        </li>
+                    </ul>
+                    <strong>自行開車</strong>
+                    <ul class="pl-4">
+                        <li>高速公路五股交流道下（往新莊、泰山），經新五路至新北大道右轉，直行至貴子路口右轉，貴子路直行至明志路左轉。於明志路繼續前行約 100 公尺右轉工專路，即可抵達明科技大學。</li>
+                        <li>由台北車站走忠孝橋，直行高架道路，下到平面道路之後直行至貴子路口右轉，貴子路直行至明志路左轉，於明志路繼續前行約 100 公尺右轉工專路，即可抵達明科技大學。</li>
+                        <li>明志科大「汽車」停車費 30 元/小時，請儘量搭乘大眾交通工具或機車（免停車費）。</li>
+                    </ul>
+                </div>
+            </div>
+
+        </article>
+    </section>
+
+    <section id="hotel-contact" class="py-5 bg-dark text-white container">
+        <header class="text-center">
+            <h2 class="text-info pb-3">聯絡我們</h2>
+        </header>
+        <article class="py-5">
+            <form action="post" class="row">
+                <div class="form-group col-12 col-md-6">
+                    <label for="cid_name">訪客姓名</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="cid_name" placeholder="請輸入全名" required>
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <div class="form-check form-check-inline">
+                                    <input id="cid_man" type="radio" name="form_sex" value="man"
+                                        class="form-check-input">
+                                    <label for="cid_man" class="form-check-label">男性</label>
+                                </div>
+                            </div>
+                            <div class="input-group-text">
+                                <div class="form-check form-check-inline">
+                                    <input id="cid_woman" type="radio" name="form_sex" value="woman"
+                                        class="form-check-input">
+                                    <label for="cid_woman" class="form-check-label">女性</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="cid_tel">聯絡電話</label>
+                    <div class="input-group">
+                        <input class="form-control" id="cid_tel" name="form_tel" type="tel" placeholder="Phone Number"
+                            required>
+                    </div>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="cid_mail">電子信箱</label>
+                    <div class="input-group">
+                        <input class="form-control" id="cid_mail" name="form_mail" type="email"
+                            placeholder="Email Address" required>
+                    </div>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="cid_question">問題類型</label>
+                    <select name="cid_question" class="custom-select">
+                        <option value="住宿相關">住宿相關</option>
+                        <option value="婚宴訂桌">婚宴訂桌</option>
+                        <option value="其他">其他</option>
+                    </select>
+                </div>
+                <div class="form-group col-12">
+                    <label for="cid_msg">需求說明</label>
+                    <textarea placeholder="Write your Message..." id="cid_msg" rows="13"
+                        class="form-control"></textarea>
+                </div>
+                <div class="form-group col-12 text-center">
+                    <small class="text-muted">請如實填寫便於信件回覆，我們保證不隨意公開您的留言資訊</small>
+                    <hr class="border-secondary">
+                    <button class="btn btn-primary" type="submit">確認送出</button>
+                </div>
+            </form>
+        </article>
+
+        <!-- footer先複製貼上 -->
+        <article class="bg-secondary py-5 text-center">
+            <!-- footerInfo -->
+            <div class="d-flex justify-content-center align-items-center flex-wrap">
+                <a class="text-light border p-3 m-3" href="https://www.facebook.com/tsvts/" target="_blank">
+                    <i class="fab fa-facebook fa-3x"></i><br>泰山職業訓練場
+                </a>
+                <a href="https://tkyhkm.wda.gov.tw/Default.aspx" target="_blank">
+                    <img src="https://ws.wda.gov.tw/001/Upload/308/sites/pagebackimage/366d4144-bdac-4a20-a1f2-b0846004efc0.png"
+                        alt="勞動部勞動力發展署北基宜花金馬分署全球資訊網">
+                </a>
+                <a href="https://www.taiwanjobs.gov.tw/home/new_index.aspx" target="_blank">
+                    <img src="https://icmp-ws.chiayi.gov.tw/001/Upload/408/relpic/9352/408618/8e7e31cb-201c-4b6f-802f-920fb8f06e28@710x470.png"
+                        alt="台灣就業通">
+                </a>
+            </div>
+            <div>
+                <a class="text-light" href="tel:02-2901-8274">電話：02-2901-8274</a>　｜　
+                <span class="text-light">傳真：02-2908-4773</span>　｜　
+                <a class="text-light" href="mainto:service@toyugi.com.tw">信箱：service@toyugi.com.tw</a>
+                <address>
+                    <a class="text-light" href="https://goo.gl/maps/NDzTUToVSbMQYLwv6" target="_blank">243 新北市泰山區貴子里致遠新村
+                        55 之 1 號</a>
+                </address>
+            </div>
+        </article>
+
+    </section>
 
     <footer class="bg-dark text-muted py-3 text-center">
         <small>
-            泰山職訓中心教材 <br>Copyright &copy; <span class="text-warning">洛奇數位設計</span>. All rights reserved.
-        </small>
+            copyright &copy; <a class="text-warning" href="https://github.com/chang180" target="_blank">張建文</a>. all
+            rights reserved</small>
         <div>
             <a href="#hotel-slider" class="btn btn-info text-light"><i class="fas fa-angle-double-up fa-2x"></i></a>
         </div>
-        <!-- 背景音樂，先放這裏
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/uG4Bq4XuVjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div> -->
+        <!-- 背景音樂，先放這裏，怎麼關掉先不管
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uG4Bq4XuVjc?autoplay=1" hidden></iframe> -->
     </footer>
-
-
 
     <!-- Bootstrap JS, jQuery, Popper: -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
